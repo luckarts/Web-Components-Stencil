@@ -2,7 +2,7 @@ import { Config } from '@stencil/core';
 import { sass } from '@stencil/sass';
 
 export const config: Config = {
-  namespace: 'web-components',
+  namespace: 'web-component-stencil',
   taskQueue: 'async',
   globalStyle: 'src/global/variable.css',
   plugins: [

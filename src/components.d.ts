@@ -9,6 +9,7 @@ export namespace Components {
     interface WcButton {
         "color": "accent" | "light" | "";
         "disabled": boolean;
+        "font": "small" | "default" | "large" | "";
         "href": string;
         "shape": "rounded" | "";
         "size": "small" | "default" | "large" | "";
@@ -32,6 +33,7 @@ declare namespace LocalJSX {
     interface WcButton {
         "color"?: "accent" | "light" | "";
         "disabled"?: boolean;
+        "font"?: "small" | "default" | "large" | "";
         "href"?: string;
         "shape"?: "rounded" | "";
         "size"?: "small" | "default" | "large" | "";

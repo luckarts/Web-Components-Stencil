@@ -20,6 +20,8 @@ export class WcButton {
   shape: 'rounded'|''='';
   @Prop()
   size: 'small' | 'default' | 'large' | ''= '';
+  @Prop()
+  font: 'small' | 'default' | 'large' | ''= '';
 
 
   @Element() btnEl : HTMLButtonElement;
