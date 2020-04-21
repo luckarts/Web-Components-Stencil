@@ -17,6 +17,10 @@ export namespace Components {
         "type": "button" | "reset" | "submit";
         "variante": "solid" | "outline" | "clear" | "";
     }
+    interface WcLazyload {
+        "dataSrc": string;
+        "src": string;
+    }
 }
 declare global {
     interface HTMLWcButtonElement extends Components.WcButton, HTMLStencilElement {
@@ -25,8 +29,15 @@ declare global {
         prototype: HTMLWcButtonElement;
         new (): HTMLWcButtonElement;
     };
+    interface HTMLWcLazyloadElement extends Components.WcLazyload, HTMLStencilElement {
+    }
+    var HTMLWcLazyloadElement: {
+        prototype: HTMLWcLazyloadElement;
+        new (): HTMLWcLazyloadElement;
+    };
     interface HTMLElementTagNameMap {
         "wc-button": HTMLWcButtonElement;
+        "wc-lazyload": HTMLWcLazyloadElement;
     }
 }
 declare namespace LocalJSX {
@@ -41,8 +52,13 @@ declare namespace LocalJSX {
         "type"?: "button" | "reset" | "submit";
         "variante"?: "solid" | "outline" | "clear" | "";
     }
+    interface WcLazyload {
+        "dataSrc"?: string;
+        "src"?: string;
+    }
     interface IntrinsicElements {
         "wc-button": WcButton;
+        "wc-lazyload": WcLazyload;
     }
 }
 export { LocalJSX as JSX };
@@ -50,6 +66,7 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "wc-button": LocalJSX.WcButton & JSXBase.HTMLAttributes<HTMLWcButtonElement>;
+            "wc-lazyload": LocalJSX.WcLazyload & JSXBase.HTMLAttributes<HTMLWcLazyloadElement>;
         }
     }
 }

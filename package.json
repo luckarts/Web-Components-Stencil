@@ -1,5 +1,5 @@
 {
-  "name": "web-components-stencil",
+  "name": "wc-lazyload",
   "version": "0.0.1",
   "description": "Stencil Component Starter",
   "main": "dist/index.js",
@@ -9,7 +9,7 @@
   "types": "dist/types/index.d.ts",
   "collection": "dist/collection/collection-manifest.json",
   "collection:main": "dist/collection/index.js",
-  "unpkg": "dist/web-components/web-components.js",
+  "unpkg": "dist/wc-lazyload/wc-lazyload.js",
   "files": [
     "dist/",
     "loader/"
@@ -23,12 +23,7 @@
   },
   "devDependencies": {
     "@stencil/core": "^1.12.2",
-    "@stencil/postcss": "^1.0.1",
-    "@types/autoprefixer": "^9.7.2",
-    "autoprefixer": "^9.7.6"
-  },
-  "license": "MIT",
-  "dependencies": {
     "@stencil/sass": "^1.3.1"
-  }
+  },
+  "license": "MIT"
 }

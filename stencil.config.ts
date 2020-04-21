@@ -1,10 +1,13 @@
 import { Config } from '@stencil/core';
 import { sass } from '@stencil/sass';
-
 export const config: Config = {
-  namespace: 'web-component-stencil',
+  namespace: 'wc-lazyload',
   taskQueue: 'async',
   globalStyle: 'src/global/variable.css',
+  bundles: [
+    { components: ['wc-button'] },
+    { components: ['wc-lazyload'] }
+  ],
   plugins: [
     sass()
   ],
@@ -13,7 +16,6 @@ export const config: Config = {
       type: 'dist',
       esmLoaderPath: '../loader'
     },
-
     {
       type: 'docs-readme'
     },

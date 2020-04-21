@@ -1,0 +1,10 @@
+:host {
+  display: block;
+}
+
+img {
+  background-color: red;
+  width: auto;
+  height: 100vh;
+  ;
+}

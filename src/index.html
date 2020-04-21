@@ -5,19 +5,21 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
   <title>Stencil Component Starter</title>
+  <script type="module" src="/build/wc-lazyload.esm.js"></script>
+  <script nomodule src="/build/wc-lazyload.js"></script>
+  <link rel="stylesheet" href="/build/wc-lazyload.css" />
 
-  <script type="module" src="/build/web-components.esm.js"></script>
-  <script nomodule src="/build/web-components.js"></script>
-  <link rel="stylesheet" href="/build/web-components.css" />
 </head>
 
-
 <body>
-
   <wc-button color="primary" href="https://material-ui.com/components/buttons/#outlined-buttons">Click me</wc-button>
   <wc-button color="secondary" variante="outline">Click me</wc-button>
   <wc-button color="primary" variante="solid">Click me</wc-button>
-  <wc-button disabled>Click me</wc-button>
+  <wc-button disabled>test</wc-button>
+  <wc-lazyload src="https://bachelart.fr/img/painting-lyly.jpg" data-src="https://bachelart.fr/thumb/img/tableau.jpg">
+  </wc-lazyload>
+  <wc-lazyload src="https://bachelart.fr/img/painting-lyly.jpg" data-src="https://bachelart.fr/thumb/img/tableau.jpg">
+  </wc-lazyload>
 </body>
 
 </html>
