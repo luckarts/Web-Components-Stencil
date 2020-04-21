@@ -1,7 +1,7 @@
 import { Config } from '@stencil/core';
 import { sass } from '@stencil/sass';
 export const config: Config = {
-  namespace: 'wc-lazyload',
+  namespace: 'web-components-stencil',
   taskQueue: 'async',
   globalStyle: 'src/global/variable.css',
   bundles: [
